@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- This is a comment -->
+
+<head>
+  <title>My First HTML</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="John Doe">
+  <link rel="stylesheet" href="styles.css">
+  <style></style>
+  <script>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script>
+  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  <base href="https://www.w3schools.com/images/" target="_blank">
+</head>
+
+<title>HTML Tutorial</title>
+<body style="background-color:powderblue;">
+<h1 style="font-family:courier;">This is a heading</h1>
+<p style="color:red", title="I'm a tooltip">This is a paragraph.</p>
+<hr>
+
+<ul style="border:2px solid Tomato; list-style-type:square;">
+  <li style="font-size:160%;">Coffee</li>
+  <li style="text-align:center;">Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<ol type="I", start="20">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2>Heading 2</h2>
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+<h3>Heading 3</h3>
+<b>This text is bold</b>
+<br>
+<strong>This text is strong</strong>
+<br>
+<i>This text is italic</i>
+<br>
+<em>This text is emphasized</em>
+<br>
+<small>Small</small><mark>Marked</mark><del>blue</del><ins>color</ins>
+<sub>subscripted</sub><sup>superscripted</sup>
+
+<h4 id="H4">Heading 4</h4>
+<q>Quotation</q>
+<blockquote cite="link.html">Blockquote</blockquote>
+<abbr title="World Health Organization">WHO</abbr>
+<address>
+Address written by John Doe.
+</address>
+<cite>The Scream - cite</cite>
+<br>
+<bdo dir="rtl">This text will be written from right to left</bdo><br>
+<a href="https://www.w3schools.com/" target="_blank">Opens link in new tab or window</a><br>
+<a href="https://www.w3schools.com/" target="_self">Opens link in same tab or window</a><br>
+<a href="https://www.w3schools.com/" target="_parent">Opens link in parent frame</a><br>
+<a href="https://www.w3schools.com/" target="_top">Opens link in full body of a window</a><br>
+
+<h5>Heading 5</h5>
+<table style="width:100%">
+<caption>Monthly savings</caption>
+  <tr>
+    <th colspan="2">Firstname and lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<div style="background-color:blue">Hello</div>
+<div class="World">World</div>
+
+<span style="background-color:red">Hello</span>
+<span id="specificWorld">World</span>
+
+<h6 style="background-image:url('clouds.jpg');">Heading 6</h6>
+<a href="https://www.w3schools.com">This is a link</a>
+<br>
+<button onclick="alert('Hello World!')">Click me</button>
+<br>
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+<br>
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a><br>
+<a href="#H4">Jump to Heading 4</a>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<map name="example of image map with clickable areas">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+<pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+<p>Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.</p>
+
+<p>I will display &euro;</p>
+<p>I will display &#8364;</p>
+<p>I will display &#x20AC;</p>
+
+<form action="/action_page.php" target="_blank">
+  <fieldset>
+     <legend>Personal information:</legend>
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey" readonly disabled size="40" maxlength="10"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse" autocomplete="on" novalidate autofocus required><br>
+
+  <input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br><br>
+<select name="cars" size="4" multiple>
+ <option value="volvo">Volvo</option>
+ <option value="saab" selected>Saab</option>
+ <option value="fiat">Fiat</option>
+ <option value="audi">Audi</option>
+ </select>
+<input type="submit" value="Submit">
+ </fieldset>
+ <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+</form>
+
+<input type="button"><br>
+<input type="checkbox"><br>
+<input type="color"><br>
+<input type="date"><br>
+<input type="datetime-local"><br>
+<input type="email"><br>
+<input type="file"><br>
+<input type="hidden"><br>
+<input type="image"><br>
+<input type="month"><br>
+<input type="number"><br>
+<input type="password"><br>
+<input type="radio"><br>
+<input type="range"><br>
+<input type="reset"><br>
+<input type="search"><br>
+<input type="submit"><br>
+<input type="tel"><br>
+<input type="text"><br>
+<input type="time"><br>
+<input type="url"><br>
+<input type="week"><br>
+
+</body>
+</html>
