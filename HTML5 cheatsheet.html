@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      document.createElement("myHero")
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      myHero {
+      display: block;
+      background-color: #dddddd;
+      padding: 50px;
+      font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Semantic elements</h1>
+    <myHero>My Hero Element</myHero>
+    <!--Element defined in script-->
+    <section>Section</section>
+    <!--Thematic grouping with a heading-->
+    <article>Article</article>
+    <!--Independent self-contained content-->
+    <aside>Aside</aside>
+    <!--Defines content in a sidebar style-->
+    <bdi>hrefs</bdi>: 60 points
+    <!--Isolates word from text-direction setting-->
+    <details>Details</details>
+    <!--Hidden text on demand-->
+    <dialog open>Dialog</dialog>
+    <br><br>
+    <!--Creates dialog box-->
+    <figure>
+      <img src="pic_trulli.jpg" alt="Trulli">
+      <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+      <!--Adding image with a caption-->
+    </figure>
+    <footer>Footer</footer>
+    <!--Footer for a document-->
+    <header>Header</header>
+    <!--Header for a document-->
+    <main>Main</main>
+    <!--Specifies main content-->
+    <mark>Mark</mark>
+    <!--Specifies marked text-->
+    <meter>Meter</meter>
+    <nav>
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+    <!--Defines a set of navigational links-->
+    <progress value="22" max="100"></progress><br>
+    <!--Represents progress of a task-->
+    <section>Section</section>
+    <!--Defines a section in a document-->
+    <summary>Summary</summary>
+    <!--Defines visible heading in a document-->
+    <time datetime="2008-02-14 20:00">Valentines day</time><br>
+    <!--Defines human-readable date/time-->
+    <wbr>wbr</wbr>
+    <!--text with word break opportunity-->
+    <h1>Semantic elements</h1>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <!--List of options in a list-->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    <input type="range" id="a" value="50">100
+    +<input type="number" id="b" value="50">
+    =<output name="x" for="a b"></output>
+    </form>
+    <!--Represents the result of a calculation-->
+    <h1>Graphic elements</h1>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      // Create gradient
+      var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+    </script>
+    </canvas>
+    <!--Drawing graphics on the fly via scripting; a container-->
+    <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    <!--A container for graphics-->
+    <h1>Media elements</h1>
+    <audio controls autoplay loop muted preload>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <!--Defines a sound container-->
+    <embed width="400" height="50" src="bookmark.swf">
+    <!--Container for an external application-->
+    <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    Your browser does not support the video tag.
+    </video>
+    <!--Defines a video container-->
+    <iframe width="420" height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    <!--Specifies inline frame-->
+  </body>
+</html>
