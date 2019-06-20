@@ -1,0 +1,84 @@
+/* Various heading and paragraph modifications */
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+  background-color: DodgerBlue;
+  border: 2px solid Tomato;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  text-shadow: 3px 2px red;
+}
+
+p {
+  border-style: dotted dashed solid double;
+  border-width: 2px;
+  outline-style: solid;
+  outline-color: yellow;
+  outline-offset: 3px;
+  width: auto;
+  margin: 4px 2px 4px 2px;
+  padding: 4px 2px 4px 2px;
+}
+
+
+/* unvisited link */
+
+a:link {
+  color: red;
+}
+
+
+/* visited link */
+
+a:visited {
+  color: green;
+}
+
+
+/* mouse over link */
+
+a:hover {
+  color: hotpink;
+}
+
+
+/* selected link */
+
+a:active {
+  color: blue;
+}
+
+
+/* Other elements styling */
+
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+  overflow: scroll;
+}
+
+nav {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
